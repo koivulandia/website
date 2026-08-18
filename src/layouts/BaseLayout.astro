@@ -1,7 +1,10 @@
 ---
 import "../styles/global.css";
+
 import { Image } from "astro:assets";
 import logoNoText from "../images/logo-no-text.png";
+
+const currentYear = new Date().getFullYear();
 ---
 
 <html lang="fi">
@@ -13,7 +16,7 @@ import logoNoText from "../images/logo-no-text.png";
     <body class="bg-zinc-800 text-white">
         <header class="bg-zinc-700 flex justify-between">
             <div class="flex items-center">
-                <a href="/" class="p-2 flex gap-2 items-center text-lime-500 font-bold text-2xl">
+                <a href="/" class="p-2 flex items-center gap-2 text-lime-500 font-bold text-2xl">
                     <Image
                         src={logoNoText}
                         alt="Koivulandian logo"
@@ -33,6 +36,9 @@ import logoNoText from "../images/logo-no-text.png";
         <main class="p-4">
             <slot />
         </main>
-        <footer></footer>
+        <footer class="bg-zinc-900 p-4 text-center">
+            <a href="mailto:koivusahko88@gmail.com" class="text-lime-500">koivusahko88@gmail.com</a>
+            <p>&copy; {currentYear} Koivulandia</p>
+        </footer>
     </body>
 </html>
