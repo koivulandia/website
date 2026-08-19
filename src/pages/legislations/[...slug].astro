@@ -1,0 +1,29 @@
+---
+import LegislationLayout from "../../layouts/LegislationLayout.astro";
+import Section from "../../components/Section.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import MinecraftProfile from "../../components/MinecraftProfile.astro";
+
+import { getCollection, render } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+    const legislations = await getCollection("legislations");
+    return legislations.map((legislation) => ({
+        params: { slug: legislation.id },
+        props: { legislation },
+    }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { legislation } = Astro.props;
+const { Content } = await render(legislation);
+---
+<LegislationLayout>
+    <Section>
+        <h1 class="text-4xl font-bold">{legislation.data.name}</h1>
+        <p>Laatinut: <MinecraftProfile uuid={legislation.data.created.author} /> <FormattedDate date={legislation.data.created.date} /></p>
+        {legislation.data.updated && <p>Viimeisin muokkaus: <MinecraftProfile uuid={legislation.data.updated.author} /> <FormattedDate date={legislation.data.updated.date} /></p>}
+    </Section>
+    <Section>
+        <article class="prose prose-invert prose-zinc"><Content /></article>
+    </Section>
+</LegislationLayout>

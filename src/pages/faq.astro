@@ -1,6 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
 ---
+
 <BaseLayout>
-	<p>kuka mitä missä milloin tapahtuu?</p>
+	<Section>
+		<h1 class="text-4xl font-bold mb-4">Usein kysytyt kysymykset</h1>
+		<div class="flex flex-col gap-4">
+			<div class="bg-zinc-700 p-4 rounded-lg">
+				<h2 class="text-2xl font-bold">Mikä ihmeen Koivulandia?</h2>
+				<p>Koivulandia on FabiCraftin survivalissa sijaitseva kylä (<a	href="fabicraft.net" target="_blank">fabicraft.net</a>)</p>
+			</div>
+			<div class="bg-zinc-700 p-4 rounded-lg">
+				<h2 class="text-2xl font-bold">Milloin Koivulandia Kokoontuu?</h2>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Harum amet at, corporis facere perferendis eligendi
+					voluptates? Vitae consequuntur tenetur nemo, asperiores
+					saepe in, blanditiis animi totam ad eveniet, eum illum!
+				</p>
+			</div>
+		</div>
+	</Section>
 </BaseLayout>

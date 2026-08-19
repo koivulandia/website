@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
+
+import { getCollection } from "astro:content";
+
+const legislations = (await getCollection("legislations")).sort(
+    (a, b) => b.data.created.date.valueOf() - a.data.created.date.valueOf(),
+);
+---
+<BaseLayout>
+	<Section>
+		<div class="flex flex-col gap-4">
+			{legislations.map(legislation => (
+					<div class="bg-zinc-700 p-4 rounded-lg">
+						<h2 class="font-bold text-xl">{legislation.data.name}</h2>
+						<p>{legislation.data.description}</p>
+						<a href={`/legislations/${legislation.id}/`}>Paina lukeaksesi</a>
+					</div>
+				))}
+		</div>
+	</Section>
+</BaseLayout>

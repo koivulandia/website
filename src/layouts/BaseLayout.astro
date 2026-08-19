@@ -26,19 +26,19 @@ const currentYear = new Date().getFullYear();
                 </a>
                 <nav class="p-4 flex gap-4">
                     <a href="/faq" class="font-bold hover:text-lime-500">FAQ</a>
-                    <a href="/laws" class="font-bold hover:text-lime-500">Lakitekstit</a>
+                    <a href="/legislations" class="font-bold hover:text-lime-500">Lakitekstit</a>
                 </nav>
             </div>
             <nav class="p-4 flex items-center gap-4">
                 <a class="font-bold hover:text-lime-500">Discord</a>
             </nav>
         </header>
-        <main class="p-4">
+        <main>
             <slot />
         </main>
-        <footer class="bg-zinc-900 p-4 text-center">
+        <footer class="bg-zinc-900 px-4 py-16 text-center">
             <a href="mailto:koivusahko88@gmail.com" class="text-lime-500">koivusahko88@gmail.com</a>
-            <p>&copy; {currentYear} Koivulandia</p>
+            <p class="text-zinc-400">&copy; {currentYear} Koivulandia</p>
         </footer>
     </body>
 </html>
