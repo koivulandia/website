@@ -2,14 +2,24 @@
 import BaseLayout from "./BaseLayout.astro";
 import { getCollection } from "astro:content";
 
+const pathname = new URL(Astro.request.url).pathname;
+
 const legislations = (await getCollection("legislations")).sort(
-    (a, b) => b.data.priority - a.data.priority || b.data.created.date.valueOf() - a.data.created.date.valueOf(),
+    (a, b) =>
+        b.data.priority - a.data.priority ||
+        b.data.created.date.valueOf() - a.data.created.date.valueOf(),
 );
 ---
+
 <BaseLayout>
     <div class="flex">
         <nav class="flex flex-col bg-zinc-900 p-4 gap-2">
-            {legislations.map(legislation => (<a href={`/legislations/${legislation.id}/`} class="hover:text-lime-500">{legislation.data.name}</a>))}
+            {
+                legislations.map((legislation) => {
+                    const href = `/legislations/${legislation.id}/`;
+                    return (<a href={href} class:list={["hover:text-lime-500", pathname === href && "text-lime-500"]}>{legislation.data.name}</a>);
+                })
+            }
         </nav>
         <div class="p-4 w-full">
             <slot />
