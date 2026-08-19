@@ -22,6 +22,7 @@ const { Content } = await render(legislation);
         <h1 class="text-4xl font-bold">{legislation.data.name}</h1>
         <p>Laatinut: <MinecraftProfile uuid={legislation.data.created.author} /> <FormattedDate date={legislation.data.created.date} /></p>
         {legislation.data.updated && <p>Viimeisin muokkaus: <MinecraftProfile uuid={legislation.data.updated.author} /> <FormattedDate date={legislation.data.updated.date} /></p>}
+        {legislation.data.description && <p>{legislation.data.description}</p>}
     </Section>
     <Section>
         <article class="prose prose-invert prose-zinc"><Content /></article>

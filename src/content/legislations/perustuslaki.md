@@ -1,12 +1,12 @@
 ---
-name: Perustuslaki
+name: Lex Constitutio (Perustuslaki)
 created:
     author: a50120f4-069e-476f-ae30-91b8d0e63a84
     date: 2022-04-19
 updated:
     author: 345b3614-9e78-43d8-9161-4c2676272588
     date: 2023-07-23
-description: Tähän asiakirjaan on kirjattu kaikki, mitä Koivulandian kansalaisen tulee tietää.
+description: Lex Constitutio eli tutummin perustuslaki määrittää tärkeimmät kansalaisen oikeudet ja tiedot. Perustuslaki ohjaa Koivulandian toimintaa ylimpänä ja historian ensimmäisenä lakina.
 priority: 1
 ---
 ## 1§ Valtiosääntö

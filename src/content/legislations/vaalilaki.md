@@ -6,7 +6,7 @@ created:
 updated:
     author: 225443ec-0de8-4a87-97cc-289aa942f959
     date: 2026-04-09
-description: Soon TM
+description: Vaalilaki eli Lex Electionis on Johtaja- ja ministerivaaleja varten luotu laki, joka ohjaa vaalien kulkua ja oikeudenmukaisuutta.
 ---
 ## 1§ Vaaleilla valittavat arvot
 Koivulandian hallinnon korkeimmat auktoriteetit kuningasta lukuun ottamatta, johtajat ja ministerit, pyritään valitsemaan pääasiassa suoralla kansanvaalilla. Tarvittaessa korkean roolin kantajan voi nimittää myös tietty auktoriteetti, kuten johtajiston enemmistö tai kuningas. Tämän on tapahduttava voimassa olevan perustuslain puitteissa.
