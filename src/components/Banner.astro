@@ -1,0 +1,19 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import backgroundImage from "../images/banner.png";
+---
+
+<div style={`background-image: url('${backgroundImage.src}');`} class="banner">
+    <Section class="text-center">
+      <h1 class="font-bold text-4xl">Koivulandia</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda at? Ab dolore ea nulla exercitationem, aliquam explicabo unde id repellendus fugit soluta, est maiores eius laudantium iure, earum veniam.</p>
+    </Section>
+</div>
+
+<style>
+    .banner {
+        background-size: cover;
+        background-position: center;
+    }
+</style>

@@ -1,15 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/Section.astro";
+import Banner from "../components/Banner.astro";
 
 import { Image } from "astro:assets";
 import jussi from "../images/jussi88takanasi-head.png";
 ---
 <BaseLayout>
-	<Section>
-		<h1 class="text-4xl font-bold mb-4">KETÄ</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda at? Ab dolore ea nulla exercitationem, aliquam explicabo unde id repellendus fugit soluta, est maiores eius laudantium iure, earum veniam.</p>
-	</Section>
+	<Banner />
 	<Section>
 		<h1 class="text-4xl font-bold mb-4">No Jussi :)</h1>
 		<Image src={jussi} alt="Jussin iso pää" class="w-full h-32" />

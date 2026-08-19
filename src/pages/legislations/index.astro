@@ -5,7 +5,7 @@ import Section from "../../components/Section.astro";
 import { getCollection } from "astro:content";
 
 const legislations = (await getCollection("legislations")).sort(
-    (a, b) => b.data.created.date.valueOf() - a.data.created.date.valueOf(),
+    (a, b) => b.data.priority - a.data.priority || b.data.created.date.valueOf() - a.data.created.date.valueOf(),
 );
 ---
 <BaseLayout>
