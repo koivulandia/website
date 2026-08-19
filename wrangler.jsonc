@@ -1,0 +1,7 @@
+{
+  "name": "koivulandia-net",
+  "compatibility_date": "2026-08-19", // Update to the day you deploy
+  "assets": {
+    "directory": "./dist"
+  }
+}
