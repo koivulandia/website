@@ -1,0 +1,213 @@
+[
+    {
+        "category": "Kuninkaalliset",
+        "color": "#06b6d4",
+        "roles": [
+            {
+                "role": "Kuningas",
+                "description": "Koivulandian ylin johtohenkilö. Koivulandiaa johtaa Jussi88Takanasi.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "590ca647-eb6b-4ef0-8354-17bbb1546f77",
+                        "discordUsername": "@jussi88takanasi"
+                    }
+                ]
+            },
+            {
+                "role": "Kuningatar",
+                "description": "Kuninkaan aviopuoliso, jonka roolin ansaitsee mennessään naimisiin.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "22dac022-32fc-4815-ba8c-41e4333bdc4b",
+                        "discordUsername": "@itsleev1" 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Ministerit",
+        "color": "#0ea5e9",
+        "roles": [
+            {
+                "role": "Sisäministeri",
+                "description": "Vastaa kylän ja kansalaisten asioista sekä toimii kansalaisavustajien johtajana. Sisäministeri valitaan vaaleilla.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "225443ec-0de8-4a87-97cc-289aa942f959",
+                        "discordUsername": "@beartso"
+                    }
+                ]
+            },
+            {
+                "role": "Rakennusylipäällikkö",
+                "description": "Vastaa kaikesta Koivulandian julkisesta rakentamisesta sekä johtaa rakentajia. Rakennusylipäällikkö valitaan vaaleilla.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "ae17176f-70e5-4ecb-9947-c00c1b3c1e7e",
+                        "discordUsername": "@piipendaali"
+                    }
+                ]
+            },
+            {
+                "role": "Armeijan Komentaja",
+                "description": "Johtaa Koivulandian Armeijaa sekä on päävastuussa Koivulandian ulko- ja turvallisuuspolitiikasta.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "e755ffd6-9f32-4142-a336-00178c4215f8",
+                        "discordUsername": "@pikkuomena"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Johtajat",
+        "color": "#3b82f6",
+        "roles": [
+            {
+                "role": "Johtajisto",
+                "description": "Johtavat kylää ja säätävät lakeja yhdessä ministereiden kanssa. Johtajia on yhteensä 9. Valitaan vaalilain mukaisesti järjestetyillä johtajavaaleilla.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
+                        "discordUsername": "@70n77u"
+                    },
+                    {
+                        "minecraftIdentifier": "345b3614-9e78-43d8-9161-4c2676272588",
+                        "discordUsername": "@eloviina"
+                    },
+                    {
+                        "minecraftIdentifier": "225443ec-0de8-4a87-97cc-289aa942f959",
+                        "discordUsername": "@beartso"
+                    },
+                    {
+                        "minecraftIdentifier": "43d667b0-a68d-4f57-a743-f6ad5f86463a",
+                        "discordUsername": "@jurbez"
+                    },
+                    {
+                        "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
+                        "discordUsername": "@vexstraxs00"
+                    },
+                    {
+                        "minecraftIdentifier": "a10bd9ff-651c-4d44-a267-069d4333f7e9",
+                        "discordUsername": "@munkki3000"
+                    },
+                    {
+                        "minecraftIdentifier": "795e7ab0-c817-4aff-afc4-85b97e6e2686",
+                        "discordUsername": "@maxwell13_14"
+                    },
+                    {
+                        "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
+                        "discordUsername": "@tonttutume"
+                    },
+                    {
+                        "minecraftIdentifier": "ae17176f-70e5-4ecb-9947-c00c1b3c1e7e",
+                        "discordUsername": "@piipendaali"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Apulaisjohtajat",
+        "color": "#6366f1",
+        "roles": [
+            {
+                "role": "Apulaisjohtaja",
+                "description": "Kansalainen, jolla on hieman keskivertokansalaista enemmän valtaa ja vapauksia. Apulaisjohtajaksi voi nimittää kuningas tai yksittäinen johtaja.",
+                "members": []
+            },
+                        {
+                "role": "Rakennusjohtaja",
+                "description": "Alempi Koivulandian rakennustöistä vastaava johtohenkilö. Rakennusjohtajia voi olla korkeintaan 7. Yleensä rakennusylipäällikkö nimittää.",
+                "members": []
+            },
+            {
+                "role": "Pankinjohtaja",
+                "description": "Koivulandian varojen hallitsija, joka avustaa kansalaisavustajien toimintaa rahoittamalla mm. uusien pelaajien tavaroita.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
+                        "discordUsername": "@70n77u"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Muita yleisiä rooleja",
+        "color": "#84cc16",
+        "roles": [
+            {
+                "role": "Kansalaisavustaja",
+                "description": "Auttaa uusia sekä vanhoja asukkaita sekä pitää huolen maaseutualueiden kunnossapidosta. Yleensä sisäministeri nimittää.",
+                "members": []
+            },
+            {
+                "role": "Rakentaja",
+                "description": "Koivulandian rakennustöihin luvan saanut kansalainen. Yleensä rakennusylipäällikkö nimittää.",
+                "members": []
+            },
+            {
+                "role": "Legenda",
+                "description": "Pitkään Koivulandiassa ollut asukas tai jollain muulla tapaa merkittävä kansalainen. Yleensä johtajisto nimittää.",
+                "members": []
+            },
+            {
+                "role": "Kunniakansalainen",
+                "description": "Tehnyt jotain Koivulandialle merkityksellistä. Yleensä johtajisto nimittää.",
+                "members": []
+            },
+            {
+                "role": "Kansalainen",
+                "description": "Nykyisen Koivulandian asukas ja kansalainen. Yleensä kansalaisavustaja nimittää ja antaa roolin.",
+                "members": []
+            }
+        ]
+    },
+    {
+        "category": "Moderointi",
+        "color": "#f43f5e",
+        "roles": [
+            {
+                "role": "Poliisi",
+                "description": "Koivulandian Discord-moderaattori. Valitaan hakuprosessin avulla.",
+                "members": [
+                    {
+                        "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
+                        "discordUsername": "@tonttutume"
+                    },
+                    {
+                        "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
+                        "discordUsername": "@vexstraxs00"
+                    },
+                    {
+                        "minecraftIdentifier": "345b3614-9e78-43d8-9161-4c2676272588",
+                        "discordUsername": "@eloviina"
+                    },
+                    {
+                        "minecraftIdentifier": "225443ec-0de8-4a87-97cc-289aa942f959",
+                        "discordUsername": "@beartso"
+                    },
+                    {
+                        "minecraftIdentifier": "e755ffd6-9f32-4142-a336-00178c4215f8",
+                        "discordUsername": "@pikkuomena"
+                    },
+                    {
+                        "minecraftIdentifier": "a50120f4-069e-476f-ae30-91b8d0e63a84",
+                        "discordUsername": "@skyblockcampfire_09105"
+                    },
+                    {
+                        "minecraftIdentifier": "22dac022-32fc-4815-ba8c-41e4333bdc4b",
+                        "discordUsername": "@itsleev1"
+                    },
+                    {
+                        "minecraftIdentifier": "590ca647-eb6b-4ef0-8354-17bbb1546f77",
+                        "discordUsername": "@jussi88takanasi"
+                    }
+                ]
+            }
+        ]
+    }
+]

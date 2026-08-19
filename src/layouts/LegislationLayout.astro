@@ -17,7 +17,7 @@ const legislations = (await getCollection("legislations")).sort(
             {
                 legislations.map((legislation) => {
                     const href = `/legislations/${legislation.id}/`;
-                    return (<a href={href} class:list={["hover:text-lime-500", pathname === href && "text-lime-500"]}>{legislation.data.name}</a>);
+                    return (<a href={href} class:list={["whitespace-nowrap hover:text-lime-500", pathname === href && "text-lime-500"]}>{legislation.data.name}</a>);
                 })
             }
         </nav>
