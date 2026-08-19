@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import logoNoText from "../images/logo-no-text.png";
+
+import { Icon } from "astro-icon/components";
+---
+
+<header id="navbar" class="fixed inset-x-0 backdrop-blur bg-zinc-900/50 h-16 overflow-hidden md:flex">
+    <div class="flex justify-between">
+        <a href="/" class="p-2 flex items-center gap-2 text-lime-500 font-bold text-2xl">
+            <Image src={logoNoText} alt="Koivulandian logo" class="w-12 rounded-full" />
+            Koivulandia
+        </a>
+        <button id="navbarToggle" class="h-16 w-16 grid place-items-center text-3xl md:hidden"><Icon name="fa7-solid:bars" /></button>
+    </div>
+
+    <nav class="p-4 flex flex-col gap-4 items-center md:flex-row">
+        <a href="/faq" class="font-bold hover:text-lime-500">FAQ</a>
+        <a href="/legislations" class="font-bold hover:text-lime-500">Lakitekstit</a>
+        <a href="/literature" class="font-bold hover:text-lime-500">Kirjallisuus</a>
+        <a href="/roles" class="font-bold hover:text-lime-500">Roolit</a>
+    </nav>
+    <nav class="p-4 flex justify-center items-center gap-4 md:ml-auto">
+        <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:discord" /></a>
+        <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:instagram" /></a>
+        <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:youtube" /></a>
+        <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:twitch" /></a>
+    </nav>
+</header>
+
+<style>
+    #navbar.open {
+        @apply h-full;
+    }
+</style>
+
+<script>
+    const navbar = document.getElementById("navbar");
+    const toggle = document.getElementById("navbarToggle");
+    toggle?.addEventListener("click", () => {
+        navbar.classList.toggle("open")
+    })
+</script>

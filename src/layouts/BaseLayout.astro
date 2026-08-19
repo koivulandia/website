@@ -1,11 +1,6 @@
 ---
 import "../styles/global.css";
-
-import { Image } from "astro:assets";
-import logoNoText from "../images/logo-no-text.png";
-
-import { Icon } from "astro-icon/components";
-
+import Navbar from "../components/Navbar.astro";
 const currentYear = new Date().getFullYear();
 ---
 
@@ -16,30 +11,7 @@ const currentYear = new Date().getFullYear();
         <title>Koivulandia</title>
     </head>
     <body class="bg-zinc-800 text-white">
-        <header class="sticky top-0 backdrop-blur-md flex justify-between">
-            <div class="flex items-center">
-                <a href="/" class="p-2 flex items-center gap-2 text-lime-500 font-bold text-2xl">
-                    <Image
-                        src={logoNoText}
-                        alt="Koivulandian logo"
-                        class="w-12 rounded-full"
-                    />
-                    Koivulandia
-                </a>
-                <nav class="p-4 flex gap-4">
-                    <a href="/faq" class="font-bold hover:text-lime-500">FAQ</a>
-                    <a href="/legislations" class="font-bold hover:text-lime-500">Lakitekstit</a>
-                    <a href="/literature" class="font-bold hover:text-lime-500">Kirjallisuus</a>
-                    <a href="/roles" class="font-bold hover:text-lime-500">Roolit</a>
-                </nav>
-            </div>
-            <nav class="p-4 flex items-center gap-4">
-                <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:discord" /></a>
-                <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:instagram" /></a>
-                <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:youtube" /></a>
-                <a><Icon class="text-3xl hover:text-lime-500" name="fa7-brands:twitch" /></a>
-            </nav>
-        </header>
+        <Navbar />
         <main>
             <slot />
         </main>

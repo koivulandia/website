@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@iconify-json/fa7-brands": "^1.2.4",
+    "@iconify-json/fa7-solid": "^1.2.5",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.2.3",
     "astro-icon": "^1.2.0",
