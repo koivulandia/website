@@ -7,7 +7,7 @@ updated:
     author: 345b3614-9e78-43d8-9161-4c2676272588
     date: 2023-07-23
 description: Lex Constitutio eli tutummin perustuslaki määrittää tärkeimmät kansalaisen oikeudet ja tiedot. Perustuslaki ohjaa Koivulandian toimintaa ylimpänä ja historian ensimmäisenä lakina.
-priority: 1
+priority: 3
 ---
 ## 1§ Valtiosääntö
 Koivulandia on perustuslaillinen monarkia. 

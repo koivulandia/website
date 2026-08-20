@@ -4,6 +4,7 @@ created:
     author: e755ffd6-9f32-4142-a336-00178c4215f8
     date: 2023-07-06
 description: Lex Militaris, eli tutummin sotilaslaki, on Koivulandian armeijan käyttöön suunnattu laki. Laki on luotu turvaamaan niin sotilaiden kuin Koivulandian kansalaistenkin oikeuksia.
+priority: 1
 ---
 ## 0§ Yleistä
 Lex Militaris, eli tutummin sotilaslaki, on Koivulandian armeijan käyttöön suunnattu laki. Laki on luotu turvaamaan niin sotilaiden kuin Koivulandian kansalaistenkin oikeuksia. Lakia on jaettu eri pykäliin, jotta siitä olisi helpompi etsiä tietoa. Yleisesti ottaen Sotilaslaki koskee jokaista Koivulandian armeijan palvelukseen kuuluvaa henkilöä. Sen käyttöä valvoo Koivulandian sotaoikeus.

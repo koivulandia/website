@@ -65,40 +65,40 @@
       "description": "Johtavat kylää ja säätävät lakeja yhdessä ministereiden kanssa. Johtajia on yhteensä 9. Valitaan vaalilain mukaisesti järjestetyillä johtajavaaleilla.",
       "members": [
         {
-          "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
-          "discordUsername": "@70n77u"
+          "minecraftIdentifier": "225443ec-0de8-4a87-97cc-289aa942f959",
+          "discordUsername": "@beartso"
         },
         {
           "minecraftIdentifier": "345b3614-9e78-43d8-9161-4c2676272588",
           "discordUsername": "@eloviina"
         },
         {
-          "minecraftIdentifier": "225443ec-0de8-4a87-97cc-289aa942f959",
-          "discordUsername": "@beartso"
+          "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
+          "discordUsername": "@70n77u"
         },
         {
           "minecraftIdentifier": "43d667b0-a68d-4f57-a743-f6ad5f86463a",
           "discordUsername": "@jurbez"
         },
         {
-          "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
-          "discordUsername": "@vexstraxs00"
+          "minecraftIdentifier": "795e7ab0-c817-4aff-afc4-85b97e6e2686",
+          "discordUsername": "@maxwell13_14"
         },
         {
           "minecraftIdentifier": "a10bd9ff-651c-4d44-a267-069d4333f7e9",
           "discordUsername": "@munkki3000"
         },
         {
-          "minecraftIdentifier": "795e7ab0-c817-4aff-afc4-85b97e6e2686",
-          "discordUsername": "@maxwell13_14"
+          "minecraftIdentifier": "ae17176f-70e5-4ecb-9947-c00c1b3c1e7e",
+          "discordUsername": "@piipendaali"
         },
         {
           "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
           "discordUsername": "@tonttutume"
         },
         {
-          "minecraftIdentifier": "ae17176f-70e5-4ecb-9947-c00c1b3c1e7e",
-          "discordUsername": "@piipendaali"
+          "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
+          "discordUsername": "@vexstraxs00"
         }
       ]
     }
@@ -111,21 +111,21 @@
       "members": []
     },
     {
-      "role": "Rakennusjohtaja",
-      "color": "#b45309",
-      "description": "Alempi Koivulandian rakennustöistä vastaava johtohenkilö. Rakennusjohtajia voi olla korkeintaan 7. Yleensä rakennusylipäällikkö nimittää.",
-      "members": []
-    },
-    {
       "role": "Pankinjohtaja",
       "color": "#ec4899",
-      "description": "Koivulandian varojen hallitsija, joka avustaa kansalaisavustajien toimintaa rahoittamalla mm. uusien pelaajien tavaroita.",
+      "description": "Koivulandian varojen hallitsija, joka avustaa kansalaisavustajien toimintaa rahoittamalla mm. uusien pelaajien tavaroita. Johtajisto nimittää uuden pankinjohtajan",
       "members": [
         {
           "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
           "discordUsername": "@70n77u"
         }
       ]
+    },
+    {
+      "role": "Rakennusmestari",
+      "color": "#b45309",
+      "description": "Alempi Koivulandian rakennustöistä vastaava johtohenkilö. Yleensä rakennusylipäällikkö nimittää.",
+      "members": []
     }
   ],
   "Toimihenkilöt": [
@@ -169,18 +169,6 @@
       "description": "Koivulandian Discord-moderaattori. Valitaan hakuprosessin avulla.",
       "members": [
         {
-          "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
-          "discordUsername": "@tonttutume"
-        },
-        {
-          "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
-          "discordUsername": "@vexstraxs00"
-        },
-        {
-          "minecraftIdentifier": "345b3614-9e78-43d8-9161-4c2676272588",
-          "discordUsername": "@eloviina"
-        },
-        {
           "minecraftIdentifier": "225443ec-0de8-4a87-97cc-289aa942f959",
           "discordUsername": "@beartso"
         },
@@ -189,8 +177,8 @@
           "discordUsername": "@pikkuomena"
         },
         {
-          "minecraftIdentifier": "a50120f4-069e-476f-ae30-91b8d0e63a84",
-          "discordUsername": "@skyblockcampfire_09105"
+          "minecraftIdentifier": "345b3614-9e78-43d8-9161-4c2676272588",
+          "discordUsername": "@eloviina"
         },
         {
           "minecraftIdentifier": "22dac022-32fc-4815-ba8c-41e4333bdc4b",
@@ -199,6 +187,18 @@
         {
           "minecraftIdentifier": "590ca647-eb6b-4ef0-8354-17bbb1546f77",
           "discordUsername": "@jussi88takanasi"
+        },
+        {
+          "minecraftIdentifier": "a50120f4-069e-476f-ae30-91b8d0e63a84",
+          "discordUsername": "@skyblockcampfire_09105"
+        },
+        {
+          "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
+          "discordUsername": "@tonttutume"
+        },
+        {
+          "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
+          "discordUsername": "@vexstraxs00"
         }
       ]
     }
