@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -10,6 +10,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-
+  fonts: [{
+    provider: fontProviders.google(),
+    name: "Potta One",
+    cssVariable: "--font-potta-one"
+  }],
   integrations: [icon()]
 });
