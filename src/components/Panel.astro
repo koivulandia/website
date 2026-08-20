@@ -1,0 +1,17 @@
+---
+interface Props {
+	href?: String;
+    borderColor?: String;
+}
+
+const { href, borderColor } = Astro.props;
+---
+{href ? (
+  <a style={borderColor ? `border-color: ${borderColor};` : undefined} href={href} class="p-4 rounded-lg border-2 border-zinc-500 shadow-md hover:border-lime-500">
+    <slot />
+  </a>
+) : (
+  <div style={borderColor ? `border-color: ${borderColor};` : undefined} class="p-4 rounded-lg border-2 border-zinc-500 shadow-md">
+    <slot />
+  </div>
+)}

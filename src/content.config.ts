@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { glob, file } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const legislations = defineCollection({
@@ -19,5 +19,4 @@ const legislations = defineCollection({
   }),
 });
 
-// 5. Export a single `collections` object to register your collection(s)
 export const collections = { legislations };

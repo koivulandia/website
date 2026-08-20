@@ -1,0 +1,12 @@
+---
+interface Props {
+	uuid: String;
+}
+
+const { uuid } = Astro.props;
+
+const response = await fetch(`https://playerdb.co/api/player/minecraft/${uuid}`);
+const data = await response.json();
+---
+
+{data.data.player.username}

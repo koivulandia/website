@@ -2,7 +2,8 @@
 import LegislationLayout from "../../layouts/LegislationLayout.astro";
 import Section from "../../components/Section.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
-import MinecraftProfile from "../../components/MinecraftProfile.astro";
+import PlayerHead from "../../components/minecraft/PlayerHead.astro";
+import MinecraftUsername from "../../components/minecraft/MinecraftUsername.astro";
 
 import { getCollection, render } from "astro:content";
 // 1. Generate a new path for every collection entry
@@ -20,8 +21,8 @@ const { Content } = await render(legislation);
 <LegislationLayout>
     <Section>
         <h1 class="text-4xl font-bold">{legislation.data.name}</h1>
-        <p>Laatinut: <MinecraftProfile uuid={legislation.data.created.author} /> <FormattedDate date={legislation.data.created.date} /></p>
-        {legislation.data.updated && <p>Viimeisin muokkaus: <MinecraftProfile uuid={legislation.data.updated.author} /> <FormattedDate date={legislation.data.updated.date} /></p>}
+        <p>Laatinut: <PlayerHead class="w-4 inline" uuid={legislation.data.created.author} /> <MinecraftUsername uuid={legislation.data.created.author} /> <FormattedDate date={legislation.data.created.date} /></p>
+        {legislation.data.updated && <p>Viimeisin muokkaus: <PlayerHead class="w-4 inline" uuid={legislation.data.updated.author} /> <MinecraftUsername uuid={legislation.data.updated.author} /> <FormattedDate date={legislation.data.updated.date} /></p>}
         {legislation.data.description && <p>{legislation.data.description}</p>}
     </Section>
     <Section>

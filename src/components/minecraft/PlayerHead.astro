@@ -1,0 +1,11 @@
+---
+import Image from 'astro/components/Image.astro';
+
+interface Props {
+	uuid: String;
+    class: String;
+}
+
+const { uuid, class: className } = Astro.props;
+---
+<Image src=`https://crafthead.net/avatar/${uuid}` alt="" height=128 width=128 class={className} />
