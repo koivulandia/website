@@ -1,10 +1,10 @@
 ---
 name: Lex Municipii (Kuntalaki)
 created:
-    author: 345b3614-9e78-43d8-9161-4c2676272588
+    author: 225443ec-0de8-4a87-97cc-289aa942f959
     date: 2025-05-30
 updated:
-    author: 345b3614-9e78-43d8-9161-4c2676272588
+    author: 225443ec-0de8-4a87-97cc-289aa942f959
     date: 2026-04-09
 description: Kunta- ja itsehallintoaluetoimintaa ohjaa Koivulandiassa Lex Municipii eli kuntalaki. Kuntalaissa käsitellää kuntiin liittyvät määräykset sekä itsehallintoalueisiin liittyvät säädökset.  
 ---
