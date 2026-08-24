@@ -10,10 +10,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  fonts: [{
-    provider: fontProviders.google(),
-    name: "Potta One",
-    cssVariable: "--font-potta-one"
-  }],
   integrations: [icon()]
 });
