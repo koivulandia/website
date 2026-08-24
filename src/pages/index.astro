@@ -1,26 +1,75 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
-import Banner from "../components/Banner.astro";
+
+import Section from "../components/layout/Section.astro";
+import Container from "../components/layout/Container.astro";
+
 import Button from "../components/Button.astro";
+import Heading from "../components/typography/Heading.astro";
+import Paragraph from "../components/typography/Paragraph.astro";
+
+import bannerBackground from "../images/banner.png";
+import fabiCraftBackground from "../images/fabicraft-banner-blur.png";
+
 
 import { Image } from "astro:assets";
 import jussi from "../images/jussi88takanasi-head.png";
+
+import { getCollection, render } from "astro:content";
+
+const entries = await getCollection("news");
+const latest = entries.sort((a, b) => b.id.localeCompare(a.id))[0];
+
+const { Content } = await render(latest);
 ---
 <BaseLayout>
-	<Banner />
+	<Section class="bg-cover bg-center text-center pt-32" style={`background-image: url('${bannerBackground.src}');`}>
+		<Container>
+			<Heading>Koivulandia</Heading>
+			<Paragraph>
+			Koivulandia on Minecraft-valtio, joka on perustettu jo vuonna 2020.
+			Koivulandia toimii yhteisöhenkisellä FabiCraft-palvelimella.
+			</Paragraph>
+			<Paragraph>
+			Tervetuloa pelaamaan mahtavaan yhteisöömme Koivulandiaan!
+			</Paragraph>
+			<Button href="https://discord.gg/44dPAyUT8u" target="_blank">Liity Koivulandiaan</Button>
+		</Container>
+    </Section>
 	<Section>
-		<h1 class="text-4xl font-bold mb-4">Fabicraft</h1>
-		<p>
-		Pelipalvelimemme FabiCraft on alkuvuodesta 2026 perustettu suomalainen yhteisöpohjainen Minecraft-palvelin.
-		FabiCraftin perusti HerbaCraftin entinen aktiiviylläpito pienillä lisämausteilla, joka rautaisella osaamisellaan rakentaa pala palalta yhtä Suomen upeimmista palvelimista.
-		FabiCraftin pelimuototarjontaan kuului aluksi survival, mutta nykyään pääset tutustumaan myös tuttuakin tutumpaan punkkasotaan sekä creativeen - hubia unohtamatta!
-		Mitä vielä odottelet? Tervetuloa pelaamaan!
-		</p>
-		<Button href="https://fabicraft.net" target="_blank">Pelipalvelimelle</Button>
+		<Container class="gap-4 lg:flex">
+			<div>
+				<Heading>Ajankohtaista</Heading>
+				<Heading size="2">{latest.data.title}</Heading>
+				<article class="prose prose-invert prose-zinc max-w-none"><Content /></article>
+			</div>
+		<iframe class="w-full lg:max-w-150 h-128 rounded-xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&showPrint=0&showTabs=0&showTz=0&showNav=0&showTitle=0&src=a29pdnVzYWhrbzg4QGdtYWlsLmNvbQ&color=%2384cc16" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+		</Container>
+	</Section>
+	<Section class="bg-cover bg-center" style={`background-image: url('${fabiCraftBackground.src}');`}>
+		<Container>
+			<Heading>Fabicraft</Heading>
+			<Paragraph>
+			FabiCraft on alkuvuodesta 2026 perustettu suomalainen yhteisöpohjainen Minecraft-palvelin, jolla Koivulandia majailee.
+			Sen perusti HerbaCraftin entinen aktiiviylläpito pienillä lisämausteilla, joka rautaisella osaamisellaan rakentaa pala palalta yhtä Suomen upeimmista palvelimista.
+			</Paragraph>
+			<Paragraph>Pelimuototarjonta:</Paragraph>
+			<ul class="list-disc ml-8 mb-2 text-zinc-300">
+				<li>Survival</li>
+				<li>Punkkasota</li>
+				<li>Creative</li>
+				<li>Hub</li>
+			</ul>
+			<Paragraph>
+				Mitä vielä odottelet? Hopihopi pelaamaan!
+			</Paragraph>
+			<Button href="https://fabicraft.net" target="_blank">Pelipalvelimelle</Button>
+		</Container>
 	</Section>
 	<Section>
-		<h1 class="text-4xl font-bold mb-4">No Jussi :)</h1>
-		<Image src={jussi} alt="Jussin iso pää" class="w-full h-32" />
+		<Container>
+			<h1 class="text-4xl font-bold mb-4">No Jussi :)</h1>
+			<Image src={jussi} alt="Jussin iso pää" class="w-full h-32" />
+		</Container>
 	</Section>
 </BaseLayout>

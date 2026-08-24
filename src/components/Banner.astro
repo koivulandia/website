@@ -2,18 +2,20 @@
 import Section from "./Section.astro";
 import backgroundImage from "../images/banner.png";
 import Button from "../components/Button.astro";
+import Heading from "./typography/Heading.astro";
+import Paragraph from "./typography/Paragraph.astro";
 ---
 
 <div style={`background-image: url('${backgroundImage.src}');`} class="banner">
-    <Section class="text-center flex flex-col gap-4 pt-32 items-center">
-        <h1 class="font-bold text-4xl">Koivulandia</h1>
-        <p>
+    <Section class="text-center pt-32">
+        <Heading>Koivulandia</Heading>
+        <Paragraph>
         Koivulandia on Minecraft-valtio, joka on perustettu jo vuonna 2020.
         Koivulandia toimii yhteisöhenkisellä FabiCraft-palvelimella.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
         Tervetuloa pelaamaan mahtavaan yhteisöömme Koivulandiaan!
-        </p>
+        </Paragraph>
         <Button href="https://discord.gg/44dPAyUT8u" target="_blank">Liity Koivulandiaan</Button>
     </Section>
 </div>

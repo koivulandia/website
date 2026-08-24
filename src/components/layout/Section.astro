@@ -1,0 +1,7 @@
+---
+const { class: className, style: styleName } = Astro.props;
+---
+
+<section class:list={["px-4 py-16", className]} style={styleName}>
+    <slot />
+</section>

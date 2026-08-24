@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
+
+import Section from "../components/layout/Section.astro";
+import Container from "../components/layout/Container.astro";
+
 import Panel from "../components/Panel.astro";
 import PlayerHead from "../components/minecraft/PlayerHead.astro";
 import MinecraftUsername from "../components/minecraft/MinecraftUsername.astro";
@@ -11,32 +14,34 @@ import roles from "../data/roles.json";
 
 <BaseLayout>
 	<Section class="pt-32">
-		<h1 class="text-4xl font-bold mb-4">Yleisimmät roolit</h1>
-		<div class="flex flex-col gap-16">
-			{Object.entries(roles).map(([category, roleList]) => (
-			<div>
-				<h2 class="font-bold text-2xl mb-2">{category}</h2>
-				<div class="flex flex-col gap-4">
-					{roleList.map(role => (
-					<Panel borderColor={role.color}>
-						<h3 class="font-bold text-xl">{role.role}</h3>
-						<p class="text-zinc-400 mb-2">{role.description}</p>
-						<div class="grid grid-cols-4 gap-4">
-							{role.members.map(member => (
-								<div class="flex">
-									<PlayerHead uuid={member.minecraftIdentifier} class="w-16 h-16" />
-									<div class="flex flex-col pl-2">
-										<h4 class="font-bold text-lg"><MinecraftUsername uuid={member.minecraftIdentifier} /></h4>
-										<p class="flex items-center text-zinc-400">{member.discordUsername}</p>
+		<Container>
+			<h1 class="text-4xl font-bold mb-4">Yleisimmät roolit</h1>
+			<div class="flex flex-col gap-16">
+				{Object.entries(roles).map(([category, roleList]) => (
+				<div>
+					<h2 class="font-bold text-2xl mb-2">{category}</h2>
+					<div class="flex flex-col gap-4">
+						{roleList.map(role => (
+						<Panel borderColor={role.color}>
+							<h3 class="font-bold text-xl">{role.role}</h3>
+							<p class="text-zinc-400 mb-2">{role.description}</p>
+							<div class="grid grid-cols-4 gap-4">
+								{role.members.map(member => (
+									<div class="flex">
+										<PlayerHead uuid={member.minecraftIdentifier} class="w-16 h-16" />
+										<div class="flex flex-col pl-2">
+											<h4 class="font-bold text-lg"><MinecraftUsername uuid={member.minecraftIdentifier} /></h4>
+											<p class="flex items-center text-zinc-400">{member.discordUsername}</p>
+										</div>
 									</div>
-								</div>
-							))}
-						</div>
-					</Panel>
-				))}
+								))}
+							</div>
+						</Panel>
+					))}
+					</div>
 				</div>
+			))}
 			</div>
-		))}
-		</div>
+		</Container>
 	</Section>
 </BaseLayout>
