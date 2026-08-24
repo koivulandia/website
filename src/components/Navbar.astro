@@ -37,7 +37,8 @@ import { Icon } from "astro-icon/components";
 <script>
     const navbar = document.getElementById("navbar");
     const toggle = document.getElementById("navbarToggle");
+
     toggle?.addEventListener("click", () => {
-        navbar.classList.toggle("open")
+        navbar?.classList.toggle("open")
     })
 </script>
