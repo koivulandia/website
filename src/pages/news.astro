@@ -1,4 +1,37 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Section from "../components/layout/Section.astro";
+import Container from "../components/layout/Container.astro";
+
+import Heading from "../components/typography/Heading.astro";
+
+import { getCollection, render } from "astro:content";
+
+const collection = await getCollection("news");
+const sorted = collection.sort((a, b) => b.id.localeCompare(a.id));
+
+const news = await Promise.all(
+  sorted.map(async (entry) => ({
+    entry,
+    Content: (await render(entry)).Content,
+  }))
+);
 ---
-<BaseLayout></BaseLayout>
+<BaseLayout>
+    <Section class="pt-32">
+        <Container>
+            <Heading>Ajankohtaista</Heading>
+            {
+              news.map(({ entry, Content }) => (
+                <article>
+                    <Heading size={2}>{entry.data.title}</Heading>
+                    <div class="prose prose-invert prose-zinc max-w-none">
+                        <Content />
+                    </div>
+                </article>
+              ))
+            }
+        </Container>
+    </Section>
+</BaseLayout>

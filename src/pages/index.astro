@@ -17,10 +17,10 @@ import jussi from "../images/jussi88takanasi-head.png";
 
 import { getCollection, render } from "astro:content";
 
-const entries = await getCollection("news");
-const latest = entries.sort((a, b) => b.id.localeCompare(a.id))[0];
+const newsCollection = await getCollection("news");
+const latestNewsArticle = newsCollection.sort((a, b) => b.id.localeCompare(a.id))[0];
 
-const { Content } = await render(latest);
+const { Content: News } = await render(latestNewsArticle);
 ---
 <BaseLayout>
 	<Section class="bg-cover bg-center text-center pt-32" style={`background-image: url('${bannerBackground.src}');`}>
@@ -40,8 +40,8 @@ const { Content } = await render(latest);
 		<Container class="gap-4 lg:flex">
 			<div>
 				<Heading>Ajankohtaista</Heading>
-				<Heading size={2}>{latest.data.title}</Heading>
-				<article class="prose prose-invert prose-zinc max-w-none"><Content /></article>
+				<Heading size={2}>{latestNewsArticle.data.title}</Heading>
+				<article class="prose prose-invert prose-zinc max-w-none"><News /></article>
 			</div>
 		<iframe class="w-full lg:max-w-150 h-128 rounded-xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&showPrint=0&showTabs=0&showTz=0&showNav=0&showTitle=0&src=a29pdnVzYWhrbzg4QGdtYWlsLmNvbQ&color=%2384cc16" style="border-width:0" frameborder="0" scrolling="no"></iframe>
 		</Container>
