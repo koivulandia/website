@@ -8,6 +8,6 @@ interface Props {
 const { class: className, target, href } = Astro.props;
 ---
 
-<a href={href} target={target} class:list={["text-lime-500", className]}>
+<a href={href} target={target} class:list={["text-lime-500 hover:text-lime-600", className]}>
     <slot />
 </a>
