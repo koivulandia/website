@@ -4,56 +4,61 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/layout/Section.astro";
 import Container from "../components/layout/Container.astro";
 
+import Code from "../components/typography/Code.astro"
+import Heading from "../components/typography/Heading.astro";
+import Link from "../components/typography/Link.astro";
+import Paragraph from "../components/typography/Paragraph.astro";
+
 import Panel from "../components/Panel.astro";
 ---
 
 <BaseLayout>
 	<Section class="pt-32">
 		<Container>
-			<h1 class="text-4xl font-bold mb-4">Usein kysytyt kysymykset</h1>
+			<Heading class="mb-4">Usein kysytyt kysymykset</Heading>
 			<div class="flex flex-col gap-4">
 				<Panel>
-					<h2 class="text-xl font-bold">Mikä ihmeen Koivulandia?</h2>
-					<p class="text-zinc-400">
-						Koivulandia on Minecraft-valtio <a href="fabicraft.net" target="_blank" class="text-lime-500">fabicraft.net</a>-nimisellä palvelimella
-					</p>
+					<Heading size={3}>Mikä ihmeen Koivulandia?</Heading>
+					<Paragraph>
+						Koivulandia on Minecraft-valtio <Link href="fabicraft.net" target="_blank">fabicraft.net</Link>-nimisellä palvelimella
+					</Paragraph>
 				</Panel>
 				<Panel>
-					<h2 class="text-xl font-bold">Kuinka liittyä Koivulandiaan?</h2>
-					<p class="text-zinc-400">
+					<Heading size={3}>Kuinka liittyä Koivulandiaan?</Heading>
+					<Paragraph>
 						Koivulandiaan voit liittyä Minecraftista.
-						Mene <a href="fabicraft.net" target="_blank" class="text-lime-500">FabiCraftin</a> nettisivuille, josta löydät ohjeet liittymiseen palvelimelle.
-					</p>
-					<p class="text-zinc-400">
-						Muuttamiseen voit kysyä apua <a href="https://discord.gg/44dPAyUT8u" target="_blank" class="text-lime-500">Koivulandian Discordista</a> tai paikalla olevilta pelaajilta
-					</p>
+						Mene <Link href="fabicraft.net" target="_blank">FabiCraftin</Link> nettisivuille, josta löydät ohjeet liittymiseen palvelimelle.
+					</Paragraph>
+					<Paragraph>
+						Muuttamiseen voit kysyä apua <Link href="https://discord.gg/44dPAyUT8u" target="_blank">Koivulandian Discordista</Link> tai paikalla olevilta pelaajilta
+					</Paragraph>
 				</Panel>
 				<Panel>
-					<h2 class="text-xl font-bold">Miten löydän Koivulandian palvelimelta?</h2>
-					<p class="text-zinc-400">
-						Koivulandia sijaitsee survivalissa. Helpoin tapa on tulla Koivulandiaan komennolla /warp koivu-keskusta.
-						Komento /warp koivulandia vie Koivulandian suurimmalle asutusalueelle Koivulahteen. Koivulandian koordinaatit ovat x: -2000, z: 900
-					</p>
+					<Heading size={3}>Miten löydän Koivulandian palvelimelta?</Heading>
+					<Paragraph>
+						Koivulandia sijaitsee survivalissa. Helpoin tapa on tulla Koivulandiaan komennolla <Code>/warp koivu-keskusta</Code>.
+						Komento <Code>/warp koivulandia</Code> vie Koivulandian suurimmalle asutusalueelle Koivulahteen. Koivulandian koordinaatit ovat x: -2000, z: 900
+					</Paragraph>
 				</Panel>
 				<Panel>
-					<h2 class="text-xl font-bold">Miten saan rooleja sekä virkoja Koivulandiasta?</h2>
-					<p class="text-zinc-400">
+					<Heading size={3}>Miten saan rooleja sekä virkoja Koivulandiasta?</Heading>
+					<Paragraph>
 						Rooleja ja virkoja saa lähtökohtaisesti silloin, kun tekee Koivulandian eteen töitä. Esimerkiksi rakentajaksi ja kansalaisavustajaksi eli kavaksi on mahdollista päästä.
 						Yleensä paras tapa on ilmaista kiinnostustaan Discordissa tai ottamalla suoraan yhteyttä suoraan esihenkilöihin - he auttavat mielellään!
-					</p>
+					</Paragraph>
 				</Panel>
 				<Panel>
-					<h2 class="text-xl font-bold">Mistä löydän tietoa Koivulandiasta?</h2>
-					<p class="text-zinc-400">
-						Koivulandissa on monia <a href="/legislations" class="text-lime-500">lakeja</a>, jotka antavat paljon tietoa Koivulandian toiminnasta. Koivulandian historiasta on kirjoitettu suuremmoinen teos, yli 600 -sivuinen Koivulandian Historia.
+					<Heading size={3}>Mistä löydän tietoa Koivulandiasta?</Heading>
+					<Paragraph>
+						Koivulandissa on monia <Link href="/legislations">lakeja</Link>, jotka antavat paljon tietoa Koivulandian toiminnasta. Koivulandian historiasta on kirjoitettu suuremmoinen teos, yli 600 -sivuinen Koivulandian Historia.
 						Mikäli haluat tietää jotakin lisää, voit esimerkiksi kysellä Discordissa kysymyskanavalla lisää - joku varmasti kertoo lisää tietoa!
-					</p>
+					</Paragraph>
 				</Panel>
 				<Panel>
-					<h2 class="text-xl font-bold">Milloin Koivulandia kokoontuu?</h2>
-					<p class="text-zinc-400">
+					<Heading size={3}>Milloin Koivulandia kokoontuu?</Heading>
+					<Paragraph>
 						Silloin, kun on jotain tärkeää päätettävää ja juteltavaa. Näistä ilmoitetaan yleensä etukäteen :)
-					</p>
+					</Paragraph>
 				</Panel>
 			</div>
 		</Container>

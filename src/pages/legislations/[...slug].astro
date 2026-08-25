@@ -4,6 +4,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Section from "../../components/layout/Section.astro";
 import Container from "../../components/layout/Container.astro";
 
+import Heading from "../../components/typography/Heading.astro";
+import Paragraph from "../../components/typography/Paragraph.astro";
+
 import FormattedDate from "../../components/FormattedDate.astro";
 import PlayerHead from "../../components/minecraft/PlayerHead.astro";
 import MinecraftUsername from "../../components/minecraft/MinecraftUsername.astro";
@@ -27,10 +30,10 @@ const { Content, headings } = await render(legislation);
     <Section class="pt-32">
         <Container class="flex flex-col gap-16">
             <Panel>
-                <h1 class="text-4xl font-bold">{legislation.data.name}</h1>
-                <p>Laatinut: <PlayerHead class="w-4 inline" uuid={legislation.data.created.author} /> <MinecraftUsername uuid={legislation.data.created.author} /> <FormattedDate date={legislation.data.created.date} /></p>
-                {legislation.data.updated && <p>Viimeisin muokkaus: <PlayerHead class="w-4 inline" uuid={legislation.data.updated.author} /> <MinecraftUsername uuid={legislation.data.updated.author} /> <FormattedDate date={legislation.data.updated.date} /></p>}
-                {legislation.data.description && <p class="text-zinc-300 mt-2">{legislation.data.description}</p>}
+                <Heading>{legislation.data.name}</Heading>
+                <Paragraph>Laatinut: <PlayerHead class="w-4 inline" uuid={legislation.data.created.author} /> <MinecraftUsername uuid={legislation.data.created.author} /> <FormattedDate date={legislation.data.created.date} /></Paragraph>
+                {legislation.data.updated && <Paragraph>Viimeisin muokkaus: <PlayerHead class="w-4 inline" uuid={legislation.data.updated.author} /> <MinecraftUsername uuid={legislation.data.updated.author} /> <FormattedDate date={legislation.data.updated.date} /></Paragraph>}
+                {legislation.data.description && <Paragraph>{legislation.data.description}</Paragraph>}
             </Panel>
             <div class="flex gap-4 items-start">
                 <article class="prose prose-invert prose-zinc max-w-none"><Content /></article>

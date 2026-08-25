@@ -1,6 +1,11 @@
 ---
 import "../styles/global.css";
+
 import Navbar from "../components/Navbar.astro";
+
+import Link from "../components/typography/Link.astro"
+import Paragraph from "../components/typography/Paragraph.astro";
+
 const currentYear = new Date().getFullYear();
 ---
 
@@ -20,8 +25,8 @@ const currentYear = new Date().getFullYear();
         <Navbar />
         <slot />
         <footer class="bg-zinc-900 px-4 py-16 text-center">
-            <a href="mailto:koivusahko88@gmail.com" class="text-lime-500">koivusahko88@gmail.com</a>
-            <p class="text-zinc-400">&copy; {currentYear} Koivulandia</p>
+            <Link href="mailto:koivusahko88@gmail.com">koivusahko88@gmail.com</Link>
+            <Paragraph>&copy; {currentYear} Koivulandia</Paragraph>
         </footer>
     </body>
 </html>
