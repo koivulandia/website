@@ -1,9 +1,9 @@
 {
-  "name": "asd",
+  "name": "website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "dev": "astro dev --host",
@@ -12,15 +12,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@iconify-json/fa7-brands": "^1.2.4",
-    "@iconify-json/fa7-solid": "^1.2.5",
-    "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.3",
-    "astro-icon": "^1.2.0",
-    "tailwindcss": "^4.3.3"
+    "@iconify-json/fa7-brands": "1.2.x",
+    "@iconify-json/fa7-solid": "1.2.x",
+    "@tailwindcss/vite": "4.3.x",
+    "astro": "7.2.x",
+    "astro-icon": "1.2.x",
+    "tailwindcss": "4.3.x"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.20",
-    "wrangler": "^4.124.0"
+    "@tailwindcss/typography": "0.5.x",
+    "wrangler": "4.x"
   }
 }
