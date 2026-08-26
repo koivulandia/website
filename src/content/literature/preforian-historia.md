@@ -1,8 +1,6 @@
 ---
-
+title: Preforian Koivulandian Historia
 ---
-# Preforian Koivulandian Historia
-
 ## Luku 1: Alussa olivat Preforia, metsä - ja Jussi
 (12.-14.10.2020)
 Koivulandia syntyi suunnilleen vuoden 2020 lokakuun alussa, joskin tarkkaa ajankohtaa on vaikea määrittää aineiston puutteen vuoksi. Kylän perusti Jussi88Takanasi palvelimelle nimeltä Preforia.

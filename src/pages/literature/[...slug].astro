@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+import Section from "../../components/layout/Section.astro";
+import Container from "../../components/layout/Container.astro";
+
+import Heading from "../../components/typography/Heading.astro";
+
+import Panel from "../../components/Panel.astro";
+import TableOfContents from "../../components/collection/TableOfContents.astro";
+
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+    const literature = await getCollection("literature");
+    return literature.map((literature) => ({
+        params: { slug: literature.id },
+        props: { legislation: literature },
+    }));
+}
+
+const { legislation: literature } = Astro.props;
+const { Content, headings } = await render(literature);
+---
+<BaseLayout>
+    <Section class="pt-32">
+        <Container class="flex flex-col gap-16">
+            <Panel>
+                <Heading>{literature.data.title}</Heading>
+            </Panel>
+            <div class="flex gap-4 items-start">
+                <article class="prose prose-invert prose-zinc max-w-none"><Content /></article>
+                <TableOfContents headings={headings} levels={3} />
+            </div>
+        </Container>
+    </Section>
+</BaseLayout>

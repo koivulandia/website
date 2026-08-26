@@ -19,6 +19,13 @@ const legislations = defineCollection({
   }),
 });
 
+const literature = defineCollection({
+  loader: glob({ base: './src/content/literature', pattern: '**/*.{md,mdx}' }),
+  schema: z.object({
+    title: z.string()
+  }),
+});
+
 const news = defineCollection({
   loader: glob({ base: './src/content/news', pattern: '**/*.{md,mdx}' }),
   schema: z.object({
@@ -26,4 +33,4 @@ const news = defineCollection({
   }),
 });
 
-export const collections = { legislations, news };
+export const collections = { legislations, literature, news };

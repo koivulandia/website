@@ -1,8 +1,6 @@
 ---
-
+title: Herbacraftin Ensimmäisen Koivulandian historia
 ---
-# Herbacraftin Ensimmäisen Koivulandian historia
-
 ## Luku 1: Uusi alku
 (29.9-1.10.2022)
 1.10.2022 kaikki Koivulandian suhteen muuttui. Aikaisemmin lähes kaksi vuotta kuolleena ollut kylä alkoi kaikkien yllätykseksi heräillä jälleen eloon. Kuin Feeniks-lintu se nousi Preforian hiiltyneiltä raunioilta kohoten korkeuksiin, joita ei sen uuden kasvualustan, Herbacraftin, mailla ollut ennen nähty.

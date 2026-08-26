@@ -1,8 +1,6 @@
 ---
-
+title: Välikauden Koivulandian Historia
 ---
-# Välikauden Koivulandian Historia
-
 ## Johdanto
 Koivulandialla - tuolla kylien kylällä - on se ikävä piirre, että elääkseen ja hengittääkseen raikkaasti se tarvitsee tueksi suuren palvelimen. Historiansa myyttisillä alkuajoilla se luotti Preforian nousevaan tähteen. Kun Zounaaksen palvelin sitten tammikuussa 2021 suljettiin, ei kansalla ollut paikkaa jälleenrakennuksen aloittamiselle. Tarkoittiko tämä Koivulandian kuolemaa?
 
@@ -115,4 +113,3 @@ Lyhyen episodin jälkeen kylä hiljeni jälleen pitkäksi aikaa, kunnes syyskuun
 Välikauden Koivulandia oli hiljainen ja epäaktiivinen paikka, jonka ulkopuolinen tarkastelija helposti tuomitsisi vain yhdeksi pienistä ja merkityksettömistä, nopeasti pois kuihtuvista Internetyhteisöistä. Tuhkan keskellä kuitenkin kyti aina tuli. Joskus tuota tulta ei saattanut silmillä nähdä, mutta toisinaan se melkein pääsi lehahtamaan roihuavaan liekkiinsä. Joka tapauksessa muutaman hiilloksenvaalijan silmään saattoi vierähtää kyynel, kun Herbacraftin Koivulandian suuri juhannuskokko leimahti ilmiliekkeihin.
 
 *Ajan unho, tuo vihollisistamme suurin; monen kylän jo tuhohon vei perinjuurin; vaan aikojen halki liehua voi; viherlippu, kun laulumme soi!*
-
