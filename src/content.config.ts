@@ -22,7 +22,8 @@ const legislations = defineCollection({
 const literature = defineCollection({
   loader: glob({ base: './src/content/literature', pattern: '**/*.{md,mdx}' }),
   schema: z.object({
-    title: z.string()
+    title: z.string(),
+    date: z.coerce.date()
   }),
 });
 

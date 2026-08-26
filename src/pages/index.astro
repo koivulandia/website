@@ -4,9 +4,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/layout/Section.astro";
 import Container from "../components/layout/Container.astro";
 
-import Button from "../components/Button.astro";
 import Heading from "../components/typography/Heading.astro";
 import Paragraph from "../components/typography/Paragraph.astro";
+
+import Button from "../components/Button.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import PlayerHead from "../components/minecraft/PlayerHead.astro";
 
 import bannerBackground from "../images/banner.png";
 import fabiCraftBackground from "../images/fabicraft-banner-blur.png";
@@ -39,16 +42,16 @@ const { Content: News } = await render(latestNewsArticle);
 	<Section>
 		<Container class="gap-4 lg:flex">
 			<div>
-				<Heading>Ajankohtaista</Heading>
-				<Heading size={2}>{latestNewsArticle.data.title}</Heading>
+				<Heading>{latestNewsArticle.data.title}</Heading>
+				<p class="text-zinc-500 mb-2"><FormattedDate date={latestNewsArticle.id} /></p>
 				<article class="prose prose-invert prose-zinc max-w-none"><News /></article>
 			</div>
-		<iframe class="w-full lg:max-w-150 h-128 rounded-xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&showPrint=0&showTabs=0&showTz=0&showNav=0&showTitle=0&src=a29pdnVzYWhrbzg4QGdtYWlsLmNvbQ&color=%2384cc16" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+		<iframe class="w-full shrink-0 lg:max-w-150 h-128 rounded-xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&showPrint=0&showTabs=0&showTz=0&showNav=0&showTitle=0&src=a29pdnVzYWhrbzg4QGdtYWlsLmNvbQ&color=%2384cc16" style="border-width:0" frameborder="0" scrolling="no"></iframe>
 		</Container>
 	</Section>
 	<Section class="bg-cover bg-center" style={`background-image: url('${fabiCraftBackground.src}');`}>
 		<Container>
-			<Heading>Fabicraft</Heading>
+			<Heading><PlayerHead class="w-12 mr-2 inline" uuid="1b7772dd-b01d-4526-a7a3-56f6d11e5896" />Fabicraft</Heading>
 			<Paragraph>
 			FabiCraft on alkuvuodesta 2026 perustettu suomalainen yhteisöpohjainen Minecraft-palvelin, jolla Koivulandia majailee.
 			Sen perusti HerbaCraftin entinen aktiiviylläpito pienillä lisämausteilla, joka rautaisella osaamisellaan rakentaa pala palalta yhtä Suomen upeimmista palvelimista.
@@ -68,7 +71,7 @@ const { Content: News } = await render(latestNewsArticle);
 	</Section>
 	<Section>
 		<Container>
-			<h1 class="text-4xl font-bold mb-4">No Jussi :)</h1>
+			<Heading>No Jussi :)</Heading>
 			<Image src={jussi} alt="Jussin iso pää" class="w-full h-32" />
 		</Container>
 	</Section>

@@ -17,7 +17,7 @@ import { getCollection, render } from "astro:content";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
     const legislations = await getCollection("legislations");
-    return legislations.map((legislation) => ({
+    return legislations.map(legislation => ({
         params: { slug: legislation.id },
         props: { legislation },
     }));
@@ -36,7 +36,7 @@ const { Content, headings } = await render(legislation);
                 {legislation.data.description && <Paragraph>{legislation.data.description}</Paragraph>}
             </Panel>
             <div class="flex gap-4 items-start">
-                <article class="prose prose-invert prose-zinc max-w-none"><Content /></article>
+                <article class="prose prose-invert prose-zinc max-w-none prose-a:text-lime-500 prose-a:no-underline prose-a:hover:text-lime-600"><Content /></article>
                 <TableOfContents headings={headings} levels={3} />
             </div>
         </Container>

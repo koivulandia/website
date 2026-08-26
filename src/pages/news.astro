@@ -5,6 +5,7 @@ import Section from "../components/layout/Section.astro";
 import Container from "../components/layout/Container.astro";
 
 import Heading from "../components/typography/Heading.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
 import { getCollection, render } from "astro:content";
 
@@ -21,17 +22,19 @@ const news = await Promise.all(
 <BaseLayout>
     <Section class="pt-32">
         <Container>
-            <Heading>Ajankohtaista</Heading>
-            {
-              news.map(({ entry, Content }) => (
-                <article>
-                    <Heading size={2}>{entry.data.title}</Heading>
-                    <div class="prose prose-invert prose-zinc max-w-none">
-                        <Content />
-                    </div>
-                </article>
-              ))
-            }
+            <div class="grid gap-16">
+              {
+                news.map(({ entry, Content }) => (
+                  <article>
+                      <Heading>{entry.data.title}</Heading>
+                      <p class="text-zinc-500 mb-2"><FormattedDate date={entry.id} /></p>
+                      <div class="prose prose-invert prose-zinc max-w-none prose-a:text-lime-500 prose-a:no-underline prose-a:hover:text-lime-600">
+                          <Content />
+                      </div>
+                  </article>
+                ))
+              }
+            </div>
         </Container>
     </Section>
 </BaseLayout>

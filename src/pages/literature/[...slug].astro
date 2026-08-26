@@ -13,13 +13,13 @@ import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
     const literature = await getCollection("literature");
-    return literature.map((literature) => ({
+    return literature.map(literature => ({
         params: { slug: literature.id },
-        props: { legislation: literature },
+        props: { literature },
     }));
 }
 
-const { legislation: literature } = Astro.props;
+const { literature } = Astro.props;
 const { Content, headings } = await render(literature);
 ---
 <BaseLayout>
@@ -29,8 +29,8 @@ const { Content, headings } = await render(literature);
                 <Heading>{literature.data.title}</Heading>
             </Panel>
             <div class="flex gap-4 items-start">
-                <article class="prose prose-invert prose-zinc max-w-none"><Content /></article>
-                <TableOfContents headings={headings} levels={3} />
+                <article class="prose prose-invert prose-zinc max-w-none prose-a:text-lime-500 prose-a:no-underline prose-a:hover:text-lime-600"><Content /></article>
+                <TableOfContents headings={headings} levels={2} />
             </div>
         </Container>
     </Section>

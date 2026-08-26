@@ -1,5 +1,8 @@
 ---
 title: Välikauden Koivulandian Historia
+date: 2026-08-26
+cover:
+coverAlt: 
 ---
 ## Johdanto
 Koivulandialla - tuolla kylien kylällä - on se ikävä piirre, että elääkseen ja hengittääkseen raikkaasti se tarvitsee tueksi suuren palvelimen. Historiansa myyttisillä alkuajoilla se luotti Preforian nousevaan tähteen. Kun Zounaaksen palvelin sitten tammikuussa 2021 suljettiin, ei kansalla ollut paikkaa jälleenrakennuksen aloittamiselle. Tarkoittiko tämä Koivulandian kuolemaa?

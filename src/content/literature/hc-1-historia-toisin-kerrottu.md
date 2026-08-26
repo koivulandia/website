@@ -1,5 +1,8 @@
 ---
 title: Herbacraftin ensimmäisen suuren Koivulandian historia toisin kerrottuna
+date: 2026-08-26
+cover:
+coverAlt: 
 ---
 
 ## Esipuhe

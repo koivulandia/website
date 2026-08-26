@@ -1,5 +1,8 @@
 ---
 title: Preforian Koivulandian Historia
+date: 2026-08-26
+cover:
+coverAlt: 
 ---
 ## Luku 1: Alussa olivat Preforia, metsä - ja Jussi
 (12.-14.10.2020)

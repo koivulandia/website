@@ -1,5 +1,8 @@
 ---
 title: Herbacraftin Ensimmäisen Koivulandian historia
+date: 2026-08-26
+cover:
+coverAlt: 
 ---
 ## Luku 1: Uusi alku
 (29.9-1.10.2022)
