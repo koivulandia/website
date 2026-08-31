@@ -41,8 +41,8 @@
       "description": "Vastaa kaikesta Koivulandian julkisesta rakentamisesta sekä johtaa rakentajia. Rakennusylipäällikkö valitaan vaaleilla.",
       "members": [
         {
-          "minecraftIdentifier": "ae17176f-70e5-4ecb-9947-c00c1b3c1e7e",
-          "discordUsername": "@piipendaali"
+          "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
+          "discordUsername": "@70n77u"
         }
       ]
     },
@@ -69,20 +69,20 @@
           "discordUsername": "@beartso"
         },
         {
+          "minecraftIdentifier": "e755ffd6-9f32-4142-a336-00178c4215f8",
+          "discordUsername": "@pikkuomena"
+        },
+        {
+          "minecraftIdentifier": "8a1f7475-fde5-4d0a-b73b-836db307332f",
+          "discordUsername": "@_douma_douma"
+        },
+        {
           "minecraftIdentifier": "345b3614-9e78-43d8-9161-4c2676272588",
           "discordUsername": "@eloviina"
         },
         {
           "minecraftIdentifier": "a8376522-94a0-4154-8577-254f549cc759",
           "discordUsername": "@70n77u"
-        },
-        {
-          "minecraftIdentifier": "43d667b0-a68d-4f57-a743-f6ad5f86463a",
-          "discordUsername": "@jurbez"
-        },
-        {
-          "minecraftIdentifier": "795e7ab0-c817-4aff-afc4-85b97e6e2686",
-          "discordUsername": "@maxwell13_14"
         },
         {
           "minecraftIdentifier": "a10bd9ff-651c-4d44-a267-069d4333f7e9",
@@ -93,12 +93,12 @@
           "discordUsername": "@piipendaali"
         },
         {
-          "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
-          "discordUsername": "@tonttutume"
+          "minecraftIdentifier": "5243ca6c-5c4b-4e54-9444-62bade161df1",
+          "discordUsername": "@temmuplays10"
         },
         {
-          "minecraftIdentifier": "827491f0-c8f3-4142-b07e-3b8d88817487",
-          "discordUsername": "@vexstraxs00"
+          "minecraftIdentifier": "a66a9249-3853-46d9-ab36-92d76015926e",
+          "discordUsername": "@tonttutume"
         }
       ]
     }
