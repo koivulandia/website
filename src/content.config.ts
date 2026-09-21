@@ -30,7 +30,12 @@ const literature = defineCollection({
 const news = defineCollection({
   loader: glob({ base: './src/content/news', pattern: '**/*.{md,mdx}' }),
   schema: z.object({
-    title: z.string()
+    title: z.string(),
+    cover: z.object({
+      src: z.string(),
+      alt: z.string()
+    }).optional(),
+    date: z.coerce.date()
   }),
 });
 

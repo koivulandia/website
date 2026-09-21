@@ -23,6 +23,13 @@ import { getCollection, render } from "astro:content";
 const newsCollection = await getCollection("news");
 const latestNewsArticle = newsCollection.sort((a, b) => b.id.localeCompare(a.id))[0];
 
+
+const index = latestNewsArticle.body?.indexOf("<!-- truncate -->");
+const truncated = index !== -1;
+if (truncated) {
+  latestNewsArticle.body = latestNewsArticle.body?.slice(0, index);
+}
+
 const { Content: News } = await render(latestNewsArticle);
 ---
 <BaseLayout>
