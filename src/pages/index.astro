@@ -21,16 +21,15 @@ import jussi from "../images/jussi88takanasi-head.png";
 import { getCollection, render } from "astro:content";
 
 const newsCollection = await getCollection("news");
-const latestNewsArticle = newsCollection.sort((a, b) => b.id.localeCompare(a.id))[0];
+const latest = newsCollection.sort((a, b) => b.id.localeCompare(a.id))[0];
 
+const MARKER = "<!-- truncate -->";
+const html = latest.rendered?.html ?? "";
+const idx = html.indexOf(MARKER);
+const truncated = idx !== -1;
+const excerptHtml = truncated ? html.slice(0, idx) : html;
 
-const index = latestNewsArticle.body?.indexOf("<!-- truncate -->");
-const truncated = index !== -1;
-if (truncated) {
-  latestNewsArticle.body = latestNewsArticle.body?.slice(0, index);
-}
-
-const { Content: News } = await render(latestNewsArticle);
+const { Content: News } = await render(latest);
 ---
 <BaseLayout>
 	<Section class="bg-cover bg-center text-center pt-32" style={`background-image: url('${bannerBackground.src}');`}>
@@ -49,9 +48,12 @@ const { Content: News } = await render(latestNewsArticle);
 	<Section>
 		<Container class="gap-4 lg:flex">
 			<div>
-				<Heading>{latestNewsArticle.data.title}</Heading>
-				<p class="text-zinc-500 mb-2"><FormattedDate date={latestNewsArticle.id} /></p>
-				<article class="prose prose-invert prose-zinc max-w-none"><News /></article>
+				<Heading>{latest.data.title}</Heading>
+				<p class="text-zinc-500 mb-2"><FormattedDate date={latest.id} /></p>
+				<article class="prose prose-invert prose-zinc max-w-none mb-2">
+				    <Fragment set:html={excerptHtml} />
+				</article>
+				{truncated && <Button href="/news">Lue lisää</Button> }
 			</div>
 		<iframe class="w-full shrink-0 lg:max-w-150 h-128 rounded-xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&showPrint=0&showTabs=0&showTz=0&showNav=0&showTitle=0&src=a29pdnVzYWhrbzg4QGdtYWlsLmNvbQ&color=%2384cc16" style="border-width:0" frameborder="0" scrolling="no"></iframe>
 		</Container>
