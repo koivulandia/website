@@ -33,10 +33,10 @@ const news = defineCollection({
       return filename.replace(/\.(md|mdx)$/, '');
     },
  }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     cover: z.object({
-      src: z.string(),
+      src: image(),
       alt: z.string()
     }).optional()
   }),
