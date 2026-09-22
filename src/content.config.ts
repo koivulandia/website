@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const legislations = defineCollection({
@@ -28,9 +28,17 @@ const literature = defineCollection({
 });
 
 const news = defineCollection({
-  loader: glob({ base: './src/content/news', pattern: '**/*.{md,mdx}' }),
-  schema: z.object({
-    title: z.string()
+  loader: glob({ base: './src/content/news', pattern: '**/*.{md,mdx}', generateId: ({ entry }) => {
+      const filename = entry.split('/').pop()!;
+      return filename.replace(/\.(md|mdx)$/, '');
+    },
+ }),
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    cover: z.object({
+      src: image(),
+      alt: z.string()
+    }).optional()
   }),
 });
 
