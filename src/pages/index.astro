@@ -17,6 +17,7 @@ import fabiCraftBackground from "../images/fabicraft-banner-blur.png";
 
 import { Image } from "astro:assets";
 import jussi from "../images/jussi88takanasi-head.png";
+import kakku from "../images/totoro.jpg";
 
 import { getCollection, render } from "astro:content";
 
@@ -80,8 +81,8 @@ const { Content: News } = await render(latest);
 	</Section>
 	<Section>
 		<Container>
-			<Heading>No Jussi :)</Heading>
-			<Image src={jussi} alt="Jussin iso pää" class="w-full h-32" />
+			<Heading>Oho ei ollu Jussi</Heading>
+			<Image src={kakku} alt="Totoro" class="w-full h-32" />
 		</Container>
 	</Section>
 </BaseLayout>
