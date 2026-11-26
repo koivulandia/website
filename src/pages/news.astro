@@ -23,7 +23,7 @@ const news = await Promise.all(
 <BaseLayout>
     <Section class="pt-32">
         <Container>
-            <div class="grid gap-16">
+            <div class="grid">
               {
                 news.map(({ entry, Content }) => (
                   <article>
@@ -34,6 +34,7 @@ const news = await Promise.all(
                           <Content />
                       </div>
                   </article>
+                  <hr class="text-zinc-700 my-16" />
                 ))
               }
             </div>
